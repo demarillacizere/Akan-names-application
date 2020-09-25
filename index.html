@@ -12,14 +12,13 @@
                 <br>With this application we will help you know what your akan name would be.
                 <br>What you have to do is to enter your birthday on the form below.Don't worry if you don't know the actual day of the week.That's our job to find out. and we will suprise you with your Akan name.
             </p>
-            <form>
+            <form onsubmit="return myFunction()">
                 <label>Birthday:</label>
                 <input id="dob" type="date" name="dateofbirth" required /><br><br>
                 <label>Gender:</label>
                 <input type="radio" name="gender" value="male" required />Male
                 <input type="radio" name="gender" value="female"/>Female<br><br>
                 <input type="submit" value="Submit" /><br><br>
-                <label>Your Akan name is</label>
                 <label>Your Akan name is</label>
                 <output id="output" name="akan-name"></output>
             </form>
