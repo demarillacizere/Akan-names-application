@@ -8,11 +8,19 @@ function myFunction(){
     var yy=parseInt((year.substring(2)));
     var month=parseInt(date[1]);
     var day=parseInt(date[2]);
-    var d= (((cc/4) -2*cc-1) + ((5*yy/4)) + ((26*(month+1)/10)) + day) % 7;
+    var weekDay= (((cc/4) -2*cc-1) + ((5*yy/4)) + ((26*(month+1)/10)) + day) % 7;
     for (const rb of rbs) {
         if (rb.checked) {
             selectedValue = rb.value;
             break;
         }
     }
+    if(selectedValue=='female'){
+        document.getElementById('output').value=girlsNames[weekDay];
+    }
+    if(selectedValue=='male'){
+        document.getElementById('output').value=boysNames[weekDay];
+    }
+    
+    return false;
 }
