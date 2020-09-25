@@ -8,4 +8,5 @@ function myFunction(){
     var yy=parseInt((year.substring(2)));
     var month=parseInt(date[1]);
     var day=parseInt(date[2]);
+    var d= (((cc/4) -2*cc-1) + ((5*yy/4)) + ((26*(month+1)/10)) + day) % 7;
 }
