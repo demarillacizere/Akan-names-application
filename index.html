@@ -1,27 +1,26 @@
 <html>
     <head>
         <title>Akan Names</title>
-        <link href="css/styles.css" rel="stylesheet" type="text/css">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <script src="js/scripts.js" type="text/javascript"></script>
+        <h1>Discover your Akan name</h1>
         <div class="container">
-            <h1>Discover your Akan name</h1>
             <p>
                 Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.
                 <br>Those names are known as Akan names as they are derivered from the ghanian culture.
-                <br>With this application we will help you know what your akan name would be.
-                <br>What you have to do is to enter your birthday on the form below.Don't worry if you don't know the actual day of the week.That's our job to find out. and we will suprise you with your Akan name.
+                <br><br>With this application we will help you know what your first name would be if perchance you were born a ghanian. 
+                <br>What you have to do is to enter your birthday on the form below.And we will suprise you with your Akan name.<br><br>Don't worry if you don't know the actual day of the week.That's our job to find out.
             </p>
             <form onsubmit="return myFunction()">
                 <label>Birthday:</label>
                 <input id="dateOfBirth" type="date" name="dateofbirth" required /><br><br>
                 <label>Gender:</label>
-                <input type="radio" name="gender" value="male" required />Male
-                <input type="radio" name="gender" value="female"/>Female<br><br>
-                <input type="submit" value="Submit" /><br><br>
-                <label>Your Akan name is</label>
+                <input type="radio" name="gender" value="male" required /> Male &NonBreakingSpace;
+                <input type="radio" name="gender" value="female"/> Female<br><br>
+                <button class="btn btn-lg btn-primary">Get Akan name</button><br><br>
                 <output id="output" name="akan-name"></output>
             </form>
         </div>
