@@ -9,7 +9,9 @@ function myFunction(){
     var yy=parseInt((year.substring(2)));
     var month=parseInt(date[1]);
     var day=parseInt(date[2]);
-    var weekDay= (((cc/4) -2*cc-1) + (5*yy/4) + ((26*(month+1)/10)) + day) % 7;
+    var weekDay=parseInt(((cc/4 -2*cc-1) + (5*yy/4) + ((26*(month+1)/10)) + day) % 7); 
+    if(weekDay<0)
+    weekDay*=(-1);
     console.log(weekDay);
     const rbs = document.getElementsByName('gender');
     let selectedValue;
