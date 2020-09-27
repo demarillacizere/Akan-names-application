@@ -1,5 +1,6 @@
 var boysNames=['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame'];
 var girlsNames=['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
+var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday',];
 function myFunction(){
     var date=document.getElementById('dateOfBirth').value;
     date=date.split('-');
@@ -19,11 +20,11 @@ function myFunction(){
         }
     }
     if(selectedValue=='female'){
-        document.getElementById('output').value=girlsNames[weekDay];
+        document.getElementById('outputName').value="Hello " + girlsNames[weekDay] + " !";
     }
     if(selectedValue=='male'){
-        document.getElementById('output').value=boysNames[weekDay];
+        document.getElementById('outputName').value="Hello " + boysNames[weekDay] + " !";
     }
-    
+    document.getElementById('outputDay').value="You were born on " + days[weekDay];
     return false;
 }
