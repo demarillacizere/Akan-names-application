@@ -26,7 +26,7 @@ Louise Demarillac IZERE
     OUTPUT: "Display a warning"
 ## Known Bugs
 The date of birth whose century and year are not divisible by four don't give out a proper answer.
-### Link to live site : https://demarillacizere.github.io/Akan-names-application/
+#### Link to live site : https://demarillacizere.github.io/Akan-names-application/
 ## Contact information
 If you want to collaborate with me , contact me on izered3@gmail.com.
 ## License and copyright
